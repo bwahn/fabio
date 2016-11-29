@@ -14,6 +14,7 @@ type Config struct {
 	Metrics     Metrics
 	UI          UI
 	Runtime     Runtime
+	Username    string
 
 	ListenerValue    []string
 	CertSourcesValue []map[string]string

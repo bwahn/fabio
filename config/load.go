@@ -137,6 +137,7 @@ func load(p *properties.Properties) (cfg *Config, err error) {
 	f.StringVar(&cfg.UI.Addr, "ui.addr", Default.UI.Addr, "address the UI/API is listening on")
 	f.StringVar(&cfg.UI.Color, "ui.color", Default.UI.Color, "background color of the UI")
 	f.StringVar(&cfg.UI.Title, "ui.title", Default.UI.Title, "optional title for the UI")
+	f.StringVar(&cfg.Username, "user", Default.Username, "run fabio as user")
 
 	var awsApiGWCertCN string
 	f.StringVar(&awsApiGWCertCN, "aws.apigw.cert.cn", "", "deprecated. use caupgcn=<CN> for cert source")
